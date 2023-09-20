@@ -3,6 +3,7 @@ const express = require('express')
 const app = express();
 const mongoose = require('mongoose');
 const cors = require('cors')
+const path = require('path');
 
 const ChartRoute = require('./routes/ChartRoute');
 const CornellRoute = require ('./routes/CornellRoute');
@@ -29,6 +30,8 @@ mongoose.connect(process.env.MONGO_URI, {
     console.log(error)
 });
 
+app.use(express.json());
+
 app.listen(process.env.PORT, () => {
     console.log('Listening on Port', process.env.PORT)
 });
@@ -40,14 +43,16 @@ app.use(
       credentials: true,
     })
   );
+
+  app.use('/fonts', express.static(path.join(__dirname, 'frontend', 'src', 'component', 'fonts')));
   
-app.use('/chartnotas', ChartRoute);
-app.use('/cornellnotas', CornellRoute);
-app.use('/gpatrackers', GPARoute);
-app.use('/gradetrackers',GradeRoute);
-app.use('/map-notas', MapRoute);
-app.use('/outline-notas', OutlineRoute);
-app.use('/sentence-notas', SentenceRoute);
-app.use('/test-trackers', TestDataRoute);
-app.use('/login', UserRoute);
-app.use('/signUp', UserRoute)
+app.use('/api/chartnotas', ChartRoute);
+app.use('/api/cornellnotas', CornellRoute);
+app.use('/api/gpatrackers', GPARoute);
+app.use('/api/gradetrackers',GradeRoute);
+app.use('/api/map-notas', MapRoute);
+app.use('/api/outline-notas', OutlineRoute);
+app.use('/api/sentence-notas', SentenceRoute);
+app.use('/api/test-trackers', TestDataRoute);
+app.use('/api/login', UserRoute);
+app.use('/api/signUp', UserRoute)
