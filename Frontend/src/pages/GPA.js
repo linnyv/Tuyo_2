@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import GPAChart from '../components/GPA/GPAChartSetup';
-import "../FormMods/Font";
-import "../FormMods/FontColor";
-import "../FormMods/FontSize";
-import "../FormMods/Linestyle";
-import "../FormMods/SaveOptions";
+import "../components/FormMods/LineStyle/Linestyle";
+import "../components/FormMods/SaveOption/SaveOptions";
+import "../components/FormMods/Font";
+import "../components/FormMods/FontColor";
+import "../components/FormMods/FontSize";
 
 const GPATrackerForm = () => {
   const [semesterQuarter, setSemesterQuarter] = useState('');
