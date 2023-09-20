@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import "../components/FormMods/LineStyle/Linestyle";
+import "../components/FormMods/SaveOption/SaveOptions";
+import "../components/FormMods/Font";
+import "../components/FormMods/FontColor";
+import "../components/FormMods/FontSize";
 
 const TestTrackerForm = () => {
   const [score, setScore] = useState('');

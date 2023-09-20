@@ -1,4 +1,5 @@
 import React from 'react';
+import "../LineStyle/Linestyle.css";
 
 const LineStyleSelector = ({ lineStyle, setLineStyle }) => {
   return (

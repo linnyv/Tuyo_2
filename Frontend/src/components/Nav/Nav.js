@@ -9,6 +9,7 @@ import TestIcon from "./icons/test.png";
 import NoteIcon from "./icons/note.png";
 import GPAIcon from "./icons/gpa.png";
 import GradeIcon from "./icons/grade.png";
+import KeyIcon from "./icons/key.png";
 
 export default function Nav(props) {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,8 +37,14 @@ export default function Nav(props) {
         <div className="nav-links">
           <div className="nav-item">
             <span className="nav-logo">
-              <img src={HomeIcon} alt="House" onClick={handleLinkClick} />
+              <img src={KeyIcon} alt="Key" onClick={handleLinkClick} />
             </span>
+          </div>
+          <div className="nav-item">
+            <Link to="/" className="nav-link" onClick={handleLinkClick}>
+              <img src={HomeIcon} alt="Home" />
+              Home
+            </Link>
           </div>
           <div className="nav-item">
             <Link to="/timer" className="nav-link" onClick={handleLinkClick}>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Login.css';
 
 const LoginForm = () => {
   const [usernameEmail, setUsernameEmail] = useState('');
@@ -30,24 +31,28 @@ const LoginForm = () => {
   };
 
   return (
-    <div>
-      <h2>Login</h2>
-      {error && <p>{error}</p>}
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Username or Email"
-          value={usernameEmail}
-          onChange={(e) => setUsernameEmail(e.target.value)}
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <button type="submit">Login</button>
-      </form>
+    <div className="login-form">
+      <div className="glassmorphism">
+        <h2>Login</h2>
+        {error && <p className="error-message">{error}</p>}
+        <form onSubmit={handleSubmit}>
+          <input
+            className="input-field"
+            type="text"
+            placeholder="Username or Email"
+            value={usernameEmail}
+            onChange={(e) => setUsernameEmail(e.target.value)}
+          />
+          <input
+            className="input-field"
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <button className="submit-button" type="submit">Login</button>
+        </form>
+      </div>
     </div>
   );
 };

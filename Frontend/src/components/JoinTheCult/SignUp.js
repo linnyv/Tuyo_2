@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import "./SignUp.css"
+
 
 const SignupForm = () => {
   const [username, setUsername] = useState('');
@@ -31,29 +33,35 @@ const SignupForm = () => {
   };
 
   return (
-    <div>
-      <h2>Sign Up</h2>
-      {error && <p>{error}</p>}
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Username"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-        />
-        <input
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <input type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <button type="submit">Sign Up</button>
-      </form>
+    <div className="signup-form">
+      <div className="glassmorphism">
+        <h2>Sign Up</h2>
+        {error && <p className="error-message">{error}</p>}
+        <form onSubmit={handleSubmit}>
+          <input
+            className="input-field"
+            type="text"
+            placeholder="Username"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+          />
+          <input
+            className="input-field"
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <input
+            className="input-field"
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <button className="submit-button" type="submit">Sign Up</button>
+        </form>
+      </div>
     </div>
   );
 };

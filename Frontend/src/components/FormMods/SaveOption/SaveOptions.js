@@ -1,5 +1,6 @@
 import React from 'react';
 import { Document, Page, Text } from '@react-pdf/renderer';
+import "../SaveOption/SaveOption.css";
 
 const ShareAndSaveComponent = ({ formData }) => {
   const handleShare = () => {

@@ -1,0 +1,38 @@
+root {
+    height: 100%;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(to bottom, #8e44ad, #4d1895);
+  }
+  .timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .timer-heading {
+    font-size: 75px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  
+  .timer-display {
+    font-size: 48px;
+    background-color: lightgrey;
+    padding: 16px;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

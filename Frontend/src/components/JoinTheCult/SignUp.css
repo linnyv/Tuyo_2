@@ -1,0 +1,49 @@
+.signup-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(10px);
+  }
+  
+  .glassmorphism {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .glassmorphism h2 {
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .glassmorphism .error-message {
+    color: #ff4d4f;
+    margin-bottom: 10px;
+  }
+  
+  .glassmorphism .input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    color: #000000;
+  }
+  
+  .glassmorphism .submit-button {
+    background-color: teal;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .glassmorphism .submit-button:hover {
+    background-color: orchid;
+  }

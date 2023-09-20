@@ -1,24 +1,40 @@
+root {
+  height: 100%;
+}
+body {
+  background-color: lightseagreen;
+}
 .calculon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 25px;
-  }
-  
-  .calculon input {
-    width: 150px;
-    margin-bottom: 15px;
-    padding: 7px;
-    font-size: 20px;
-  }
-  
-  .calculon button {
-    width: 65px;
-    height: 65px;
-    margin: 7px;
-    font-size: 20px;
-  }
-  
-  .calculon .clear {
-    width: 230px;
-  }
+  width: 300px;
+  margin: 0 auto;
+  padding: 25px;
+  border: 3px solid blueviolet;
+  border-radius: 5px;
+  background-color: lightgoldenrodyellow;
+}
+
+.calculon input[type="text"] {
+  width: 90%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 18px;
+  border: 2px solid dr;
+  border-radius: 5px;
+  justify-content: center;
+}
+
+.calculon button {
+  width: 70px;
+  height: 80px;
+  margin: 2.5px;
+  font-size: 20px;
+  border: 2px solid;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.calculon button.clear {
+  background-color: #ff0000;
+  color: #fff;
+}

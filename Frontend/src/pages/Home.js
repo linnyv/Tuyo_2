@@ -1,16 +1,18 @@
 import React from "react";
 import styled, { createGlobalStyle } from "styled-components";
+import BookImage from"../components/Casa/book.png";
+import SignupForm from "../components/JoinTheCult/SignUp";
+import LoginForm from "../components/Login/Login";
 
 const GlobalStyle = createGlobalStyle`
   body {
-    background-color: 84a3eb;
+    background-color: #84a3eb;
   }
 `;
 
 const StyleCasa = styled.div`
   text-align: center;
   padding: 15px;
-  border: 20px solid #fbe265;
   border-radius: 10px;
   position: relative;
   display: inline-flexbox;
@@ -33,10 +35,10 @@ export default function Home(props) {
       <>
         <GlobalStyle />
         <StyleCasa>
+        <SignupForm/>
+        <LoginForm/>
+        <img src={BookImage} alt="Book with universe around it" />
           <h1>TuYo</h1>
-          <p>Sign Up! 
-          </p>
-          <p>Login!</p>
         </StyleCasa>
       </>
 )};

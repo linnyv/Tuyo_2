@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import "../FormMods/Font";
+import "../FormMods/FontColor";
+import "../FormMods/FontSize";
+import "../FormMods/LineStyle/Linestyle";
+import "../FormMods/SaveOption/SaveOptions";
 
 const CornellForm = () => {
   const [formData, setFormData] = useState({

@@ -1,0 +1,56 @@
+root {
+    height: 100%;
+  }
+  
+  body {
+    background-color: peachpuff;
+  }
+  .dictionary-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .dictionary-input {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .dictionary-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: pink;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .dictionary-error {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .dictionary-section {
+    margin-top: 20px;
+  }
+  
+  .dictionary-section h2 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .dictionary-section ul {
+    margin-top: 10px;
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .dictionary-section ul li {
+    margin-bottom: 5px;
+  }
+  

@@ -6,16 +6,16 @@ const cors = require('cors')
 const path = require('path');
 
 const ChartRoute = require('./routes/ChartRoute');
-const CornellRoute = require ('./routes/CornellRoute');
-const GPARoute = require ('./routes/GPARoute');
-const GradeRoute = require ('./routes/GradeRoute');
-const MapRoute = require ('./routes/MapRoute');
+const CornellRoute = require('./routes/CornellRoute');
+const GPARoute = require('./routes/GPARoute');
+const GradeRoute = require('./routes/GradeRoute');
+const MapRoute = require('./routes/MapRoute');
 const OutlineRoute = require('./routes/OutlineRoute');
-const SentenceRoute = require ('./routes/SentenceRoute');
-const TestDataRoute = require ('./routes/TestDataRoute');
-const UserRoute = require ('./routes/UserRoute');
+const SentenceRoute = require('./routes/SentenceRoute');
+const TestDataRoute = require('./routes/TestDataRoute');
+const UserRoute = require('./routes/UserRoute');
 
-app.use(express.urlencoded({extended:true}));
+app.use(express.urlencoded({ extended:true }));
 app.set('view engine', 'jsx');
 app.engine('jsx', require('express-react-views').createEngine());
 
@@ -38,7 +38,7 @@ app.listen(process.env.PORT, () => {
 
 app.use(
     cors({
-      origin: ['${PORT}'],
+      origin:  [`http://localhost:${process.env.PORT}`],
       methods: ["GET", "POST", "PUT", "DELETE"],
       credentials: true,
     })
