@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "./Dictionary.css";
 
 const apiKey = process.env.OxfordDictionaries_llave;
 const language = "en";
@@ -66,7 +65,7 @@ const DictionaryComponent = () => {
         Search
       </button>
 
-      {error && <p className="dictionary-error">Error: {error}</p>}
+      {error && <p className="dictionary-error">Error: {error.message.toString()}</p>}
 
       <div className="dictionary-section">
         <h2>Definitions:</h2>

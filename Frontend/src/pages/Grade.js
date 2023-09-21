@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import GradeChart from '../components/Grade/GradeChart';
 import "../components/FormMods/LineStyle/Linestyle";
 import "../components/FormMods/SaveOption/SaveOptions";
 import "../components/FormMods/Font";

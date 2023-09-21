@@ -1,0 +1,28 @@
+body {
+    background-color:  #10174a;
+  }
+  
+  .todo{
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    position: relative;
+    display: inline-flexbox;
+}
+h1 {
+    font-size: 40px;
+    color: #84a3e0;
+    font-family: "Special", sans-serif;
+    margin-bottom: 10px;
+  }
+
+  img{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+  }
+
+  @font-face {
+    font-family: 'Special';
+    src: url('../fonts/SpecialElite-Regular.ttf') format('truetype');
+  }

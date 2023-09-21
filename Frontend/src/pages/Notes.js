@@ -34,11 +34,11 @@ const FormSelector = () => {
       <h2>Select a Form:</h2>
       <select value={selectedForm} onChange={(e) => handleFormSelect(e.target.value)}>
         <option value="">Select a form</option>
-        <option value="sentence">Create Sentence Form</option>
-        <option value="outline">Outline Form</option>
-        <option value="map">Map Nota Form</option>
-        <option value="cornell">Cornell Form</option>
-        <option value="chart">Chart Form</option>
+        <option value="sentence">Sentence</option>
+        <option value="outline">Outline</option>
+        <option value="map">Map</option>
+        <option value="cornell">Cornell</option>
+        <option value="chart">Chart</option>
       </select>
       {renderForm()}
     </div>

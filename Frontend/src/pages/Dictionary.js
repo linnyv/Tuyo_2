@@ -1,5 +1,6 @@
 import React from "react";
 import DictionaryComponent from "../components/Dictionary/Dictionary"; 
+import "../components/Dictionary/Dictionary.css";
 
 const Dictionary = () => {  
   return (
@@ -11,3 +12,4 @@ const Dictionary = () => {
 };
 
 export default Dictionary;
+

@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-const FormComponent = () => {
+export const FormComponent = () => {
   const [text, setText] = useState('');
 
   const handleInputChange = (e) => {
     const { value } = e.target;
     setText(value);
 
-    // Call the TextGears API for spelling and grammar check
     checkSpellingAndGrammar(value);
   };
 
@@ -52,4 +51,3 @@ const FormComponent = () => {
   );
 };
 
-export default FormComponent;
